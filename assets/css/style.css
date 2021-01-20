@@ -1,27 +1,27 @@
-body{
+body {
     background-color: #1c2238;
 }
 
-.nav-wrapper{
-    background-color: #3c4564;
-    
-}
-
-.brand-logo{
+.logo-text {
     color: #7b839b!important;
+    font-size: medium;
+    font-weight: 700;
 }
 
-.sidenav{
+.sidenav {
     background-color: #262d47;
     width: 160px;
+    color: white;
+}
+
+.nav-icon:hover {
+    color: #7576fd;
+}
+.nav-icon{
     color:white;
 }
 
-.sidenav:hover{
-    color:#7b839b;
-}
-
-#myChart{
+#myChart {
     width: 600px!important;
-    height:400px!important;
+    height: 400px!important;
 }
