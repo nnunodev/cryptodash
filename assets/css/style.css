@@ -10,7 +10,7 @@ body {
 
 .sidenav {
     background-color: #262d47;
-    width: 160px;
+    width: 100px;
     color: white;
 }
 
@@ -21,7 +21,27 @@ body {
     color:white;
 }
 
+.coins-div{
+    padding-top: 50px;
+    color:white;
+    
+}
+.user-view{
+    padding-top: 100px;
+    
+}
+
+.currency_logo{
+    height: 32px;
+    width: 32px;
+}
+
 #myChart {
     width: 600px!important;
     height: 400px!important;
+}
+
+
+.sidenav .user-view {
+      margin-top: 100px;
 }

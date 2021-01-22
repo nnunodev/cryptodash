@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="refresh" content="10">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Dash</title>
@@ -20,23 +20,36 @@
     <div class="main-div logo-text">
         <p class=" center">Crypto Dash</p>
     </div>
-
-    <div class="coins-div">
-        <div class="row">
-            <div class="col s4 m4 l4">
-                <p class="center"> BTC</p>
-                <p class="center" id="btcPrice"></p>
-            </div>
-            <div class="col s4 m4 l4">
-                <p class="center"> BAT</p>
-                <p class="center" id="btcPrice"></p>
-            </div>
-            <div class="col s4 m4 l4">
-                <p class="center"> ETH</p>
-                <p class="center" id="btcPrice"></p>
+    <div class="row">
+        <div class="coins-div center">
+            <div class="col s12">
+                <i class="material-icons">account_balance_wallet</i>
+                <p id="wallet"></p>
             </div>
         </div>
     </div>
+
+    <div class="coins-div row center">
+        <div class="col s6 m6 l4">
+            <img id="BTCLogo" class="currency_logo" src="assets/images/btc_logo.svg" alt="BTC logo">
+            <p class="center" id="BTCPrice"></p>
+            <p class="center" id="BTCPriceChange"></p>
+        </div>
+        <div class="col s6 m6 l4">
+            <img id="ETHLogo" class="currency_logo" src="assets/images/eth_logo.svg" alt="ETH logo">
+            <p class="center" id="ETHPrice"></p>
+            <p class="center" id="ETHPriceChange"></p>
+        </div>
+        <div class="col s6 m6 l4">
+            <img id="BATLogo" class="currency_logo" src="assets/images/bat_logo.svg" alt="BAT logo">
+            <p class="center" id="BATPrice"></p>
+            <p class="center" id="BATPriceChange"></p>
+        </div>
+
+    </div>
+
+
+
 
     <!-- Side NavBar -->
     <ul id="slide-out" class="sidenav sidenav-fixed">
@@ -52,22 +65,24 @@
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
     <!-- Chart -->
-     <!-- <div class="col s6 m6 l12">
+    <!-- <div class="col s6 m6 l12">
         <canvas id="myChart"></canvas>
     </div> -->
- 
+
     <!-- ---------------------------- Libraries ------------------------------- -->
+
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
         crossorigin="anonymous"></script>
+    <!-- Main JS file for API -->
+    <script src="assets/js/main.js"></script>
     <!-- ChartJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
         integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
         crossorigin="anonymous"></script>
-    
-    <!-- Main JS file for API -->
-    <script src="assets/js/main.js"></script>
+
+
     <!-- Materialize Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
