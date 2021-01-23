@@ -23,7 +23,7 @@ setInterval(function () {
         let ETHPriceChange = data[1]['1d'].price_change_pct;
         //BAT
 
-        let BATPrice = data[63].price;
+        let BATPrice = data[62].price;
         let BATPriceChange = data[62]['1d'].price_change_pct;
        
 
