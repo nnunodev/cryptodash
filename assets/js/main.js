@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 setInterval(function () {
     let request = new XMLHttpRequest();
-    request.open('GET', 'https://api.nomics.com/v1/currencies/ticker?key=dcf96660caa5113bc5b1cdfe3d303540&quote-currency=EUR')
+    request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/currencies/ticker?key=dcf96660caa5113bc5b1cdfe3d303540&quote-currency=EUR')
 
     request.onload = function () {
         let data = JSON.parse(this.response);
@@ -23,7 +23,7 @@ setInterval(function () {
         let ETHPriceChange = data[1]['1d'].price_change_pct;
         //BAT
 
-        let BATPrice = data[62].price;
+        let BATPrice = data[63].price;
         let BATPriceChange = data[62]['1d'].price_change_pct;
        
 
