@@ -7,7 +7,7 @@ $(document).ready(function () {
 // Api request Nomics
 
 
-setInterval(function () {
+//setInterval(function () {
     let request = new XMLHttpRequest();
     request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/currencies/ticker?key=dcf96660caa5113bc5b1cdfe3d303540&quote-currency=EUR')
 
@@ -89,4 +89,4 @@ setInterval(function () {
     }
     request.send();
 
-}, 10000);
+//}, 10000);
